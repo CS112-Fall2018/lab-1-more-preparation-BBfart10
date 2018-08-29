@@ -2,23 +2,26 @@ Lab 1 Worksheet
 
 1. What if 12 bits were used to store a signed integer. What is the biggest/smallest possible integer?
 
+A signed integer with n bits will have a min value of -(2^n-1) and a max value
+ of +(2^n-1 - 1), so 12 bits would be -(2^12-1) and +(2^n-1 - 1) 
+
 2. Think about possible values and their range, say what type of variable would be suitable for the following, and suggest a name for it too. 
 
 For example: the temperature of a room in degrees Fahrenheit. Room temperature is likely to vary between say 50 degrees F and 100 degrees F,  but it can take any value in between including non-integers, e.g 71.19 F, so the type must be float or double depending on the accuracy required. A suitable variable name would be roomTemp. 
 
 
 (i) The number of pages in a book; 
-
+type: int, name: totalPages
 (ii) The number of atoms in a book; 
-
+type: long, name: totalAtoms
 (iii) The length of a side of a triangle in inches; 
-
+type: float, name: lengthSideA
 (iv) Your name; 
-
+type: string, name: yourName
 (v) Whether or not a nucleus has decayed; 
-
+type: boolean, name: isDecayed or isNotDecayed
 (vi) The probability that it could have decayed. 
-
+type: double, name: decayProbability
 3. Start to do a little java programming! 
 	Follow the example of the Hello.java program and do some testing of Java int and float.
 	Write a short class called “Arithmetic” that in its main method does the following:
